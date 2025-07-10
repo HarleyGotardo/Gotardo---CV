@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harley S. Gotardo - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            font-size: 11px;
+        }
+
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+            min-height: 11in;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: #34495e;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 10px;
+            color: #555;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section h2 {
+            font-size: 14px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 3px;
+            font-weight: bold;
+        }
+
+        .summary {
+            text-align: justify;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 10px;
+        }
+
+        .skill-category {
+            margin-bottom: 8px;
+        }
+
+        .skill-category strong {
+            color: #2c3e50;
+            font-size: 10px;
+        }
+
+        .job, .education-item, .project {
+            margin-bottom: 15px;
+        }
+
+        .job-header, .education-header, .project-header {
+            margin-bottom: 5px;
+        }
+
+        .job-title, .degree, .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 12px;
+        }
+
+        .company, .school, .project-tech {
+            color: #7f8c8d;
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+
+        .date {
+            float: right;
+            color: #7f8c8d;
+            font-size: 10px;
+            font-style: italic;
+        }
+
+        .company-desc {
+            font-style: italic;
+            color: #666;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+
+        .achievements li:before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .academic-achievements {
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
+        .academic-achievements strong {
+            color: #2c3e50;
+        }
+
+        .thesis {
+            font-style: italic;
+            color: #555;
+            font-size: 10px;
+            margin-top: 3px;
+        }
+
+        .reference {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+
+        .reference strong {
+            color: #2c3e50;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                font-size: 10px;
+            }
+            
+            .container {
+                margin: 0;
+                padding: 0.3in;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 12px;
+            }
+            
+            .job, .project {
+                page-break-inside: avoid;
+                margin-bottom: 10px;
+            }
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            z-index: 1000;
+        }
+
+        .download-btn:hover {
+            background: #2980b9;
+        }
+
+        @media print {
+            .download-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="download-btn" onclick="window.print()">📄 Download PDF</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>HARLEY S. GOTARDO</h1>
+            <div class="subtitle">Full-Stack Web Developer</div>
+            <div class="contact-info">
+                <span>📧 harleygothards@gmail.com</span>
+                <span>📱 +63 960 662 3222</span>
+                <span>📍 Himatagon(Pob.), Saint Bernard, Southern Leyte, Philippines</span>
+                <span>💼 LinkedIn: https://www.linkedin.com/in/harley-gotardo-4bbbaa2aa/</span>
+                <span>💻 GitHub: https://github.com/HarleyGotardo</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <div class="summary">
+                Motivated full-stack web developer with 3+ years of hands-on experience in building scalable web applications using modern technologies. Proven track record of delivering real-world solutions that improve operational efficiency by up to 70%. Specialized in Laravel, Vue.js, and database optimization with strong project management and mentoring capabilities. Seeking to leverage technical expertise and leadership skills in a challenging development role.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-category">
+                        <strong>Frontend Development:</strong> Vue.js, Inertia.js, HTML5, CSS3, JavaScript, Tailwind CSS
+                    </div>
+                    <div class="skill-category">
+                        <strong>Backend Development:</strong> Laravel, Laravel Livewire, RESTful APIs, Job Queues & Schedulers, Supabase, Firebase
+                    </div>
+                    <div class="skill-category">
+                        <strong>Database Technologies:</strong> Supabase, SQLite, MySQL, Database Normalization (3NF), Query Optimization
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category">
+                        <strong>Mobile Development:</strong> Flutter, Android Development
+                    </div>
+                    <div class="skill-category">
+                        <strong>Tools & Platforms:</strong> Git, Vercel, Pusher, Google Meet, JSON APIs
+                    </div>
+                    <div class="skill-category">
+                        <strong>Core Competencies:</strong> CRUD Operations, Role-Based Access Controls, System Integration, Real-time Features
+                    </div>
+                    <div class="skill-category">
+                        <strong>Soft Skills:</strong> Project Management, Team Leadership, Client Communication, Problem Solving, Agile Methodologies
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Full-Stack Developer Intern <span class="date">June - August 2024</span></div>
+                    <div class="company">High6 - Web Design & E-commerce Development Company | Remote</div>
+                    <div class="company-desc">Digital agency specializing in custom web solutions and e-commerce platforms for SMEs</div>
+                </div>
+                <ul class="achievements">
+                    <li>Built an internal Subscription Tracking System, streamlining record-keeping and improving data organization by 40%</li>
+                    <li>Engineered advanced CRUD operations with soft delete and restore functionality, increasing data recovery accuracy by 30%</li>
+                    <li>Automated expiry reminders via Laravel job queues and schedulers, reducing manual follow-ups by 100%</li>
+                    <li>Customized UI components using Vue.js and Tailwind CSS, improving user experience and visual consistency across 10+ views</li>
+                    <li>Normalized complex relational tables before development, reducing redundancy and optimizing query performance by 35%</li>
+                    <li>Managed backend logic with Laravel and Inertia.js, maintaining seamless data flow and responsiveness in single-page application architecture</li>
+                    <li>Created system notifications and real-time data sync features using Pusher, improving user alert visibility and engagement</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="degree">Bachelor of Science in Computer Science <span class="date">2021 - 2025</span></div>
+                    <div class="school">Visayas State University</div>
+                </div>
+                <div class="academic-achievements">
+                    <strong>Academic Achievements:</strong> Outstanding Computer Science Trainee Award: Full Stack Developer • Dean and Chairman's List Achiever • 2nd Year Representative: Computer Science Student Society Organization • Project Manager, Software Engineering 1 and 2
+                </div>
+                <div class="thesis">
+                    <strong>Thesis:</strong> "Development of a Web-Based Monitoring System for the Forest Product Collectors of the Visayas State University"
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="degree">Technical Vocational Livelihood - Information Communications Technology <span class="date">2019 - 2021</span></div>
+                    <div class="school">San Juan National High School</div>
+                </div>
+                <div class="academic-achievements">
+                    <strong>Graduated with High Honors</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Featured Projects</h2>
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Forest Product Collectors Monitoring System (Thesis Project) <span class="date">2024 - 2025</span></div>
+                    <div class="project-tech">Lead Developer & Researcher | Vue.js, Supabase, Tailwind CSS, Leaflet.js, Vercel</div>
+                </div>
+                <ul class="achievements">
+                    <li>Designed and developed a comprehensive web-based monitoring system used by the Forest Protection Unit (FPU) of VSU, replacing 100% of paper-based workflows</li>
+                    <li>Built an interactive GIS mapping feature using Leaflet.js, enabling spatial visualization of forest product collection sites, improving monitoring accuracy by 70%</li>
+                    <li>Structured and normalized the system database to Third Normal Form (3NF), minimizing data redundancy and improving query performance</li>
+                    <li>Developed and integrated role-based access controls for 3 distinct user types (Admin, Ranger, Collector), ensuring 100% secure and role-specific data access</li>
+                    <li>Achieved an overall system rating of 4.64/5 (Excellent) based on ISO/IEC 25010:2023 evaluation by 30 respondents</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Human Resource Information System (HRIS) - Mentorship Project <span class="date">2025</span></div>
+                    <div class="project-tech">Technical Mentor | Laravel Livewire</div>
+                </div>
+                <ul class="achievements">
+                    <li>Acted as technical mentor to a master's degree student, guiding the full-cycle development of a Human Resource Information System</li>
+                    <li>Facilitated structured learning sessions enabling the student to understand Laravel Livewire fundamentals within 2 months</li>
+                    <li>Co-developed key technical assets including Use Case Diagram, ERD, and database schema</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Freelance Fitness Tracking Web Application <span class="date">2024</span></div>
+                    <div class="project-tech">Full-Stack Developer | Vue.js, Supabase, Tailwind CSS</div>
+                </div>
+                <ul class="achievements">
+                    <li>Collaborated with a student client to develop a personalized web application tailored to their thesis objectives</li>
+                    <li>Conducted client interviews to gather requirements and translated them into functional modules, achieving 100% client satisfaction</li>
+                    <li>Developed a personalized workout planner that dynamically generates routines based on individual fitness goals and activity levels</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Additional Projects</h2>
+            <div class="two-column">
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">Mobile-Based Inventory and Sales Management System <span class="date">2023</span></div>
+                        <div class="project-tech">Project Manager & Lead Developer | Flutter, SQLite</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Developed an Android-based Sales and Inventory Management System for Sari-Sari Stores</li>
+                        <li>Designed an offline-capable system with online synchronization to cloud database</li>
+                        <li>Implemented core functionalities including inventory management and comprehensive sales recording</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">Cash Compass Personal Expense Tracker <span class="date">2023</span></div>
+                        <div class="project-tech">Frontend Developer | HTML5, CSS3, JavaScript</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Developed a web-based personal finance application enabling users to track income, expenses, and financial balances</li>
+                        <li>Built comprehensive expense management system with categorization, sorting, and deletion capabilities</li>
+                        <li>Utilized browser local storage for persistent data management across sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>References</h2>
+            <div class="reference">
+                <strong>Jude B. Rola</strong><br>
+                Thesis Adviser<br>
+                Visayas State University<br>
+                📧 jude.rola@vsu.edu.ph
+            </div>
+        </div>
+
+        <div class="footer">
+            Available for employment | Open to remote and hybrid work arrangements
+        </div>
+    </div>
+</body>
+</html>
