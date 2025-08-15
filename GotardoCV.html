@@ -19,7 +19,7 @@
             line-height: 1.4;
             color: #000000;
             background: white;
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .container {
@@ -38,14 +38,14 @@
         }
 
         .header h1 {
-            font-size: 32px;
+            font-size: 33px;
             color: #000000;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
         .header .subtitle {
-            font-size: 18px;
+            font-size: 19px;
             color: #000000;
             margin-bottom: 10px;
             font-weight: 600;
@@ -56,7 +56,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
-            font-size: 11px;
+            font-size: 12px;
             color: #000000;
         }
 
@@ -71,7 +71,7 @@
         }
 
         .section h2 {
-            font-size: 16px;
+            font-size: 17px;
             color: #000000;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -82,7 +82,7 @@
 
         .summary {
             text-align: justify;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.5;
             color: #000000;
         }
@@ -91,7 +91,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 8px;
-            font-size: 11px;
+            font-size: 12px;
         }
 
         .skill-category {
@@ -100,7 +100,7 @@
 
         .skill-category strong {
             color: #000000;
-            font-size: 11px;
+            font-size: 12px;
         }
 
         .job, .education-item, .project {
@@ -114,26 +114,26 @@
         .job-title, .degree, .project-title {
             font-weight: bold;
             color: #000000;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .company, .school, .project-tech {
             color: #000000;
-            font-size: 12px;
+            font-size: 13px;
             margin-bottom: 2px;
         }
 
         .date {
             float: right;
             color: #000000;
-            font-size: 11px;
+            font-size: 12px;
             font-style: italic;
         }
 
         .company-desc {
             font-style: italic;
             color: #000000;
-            font-size: 11px;
+            font-size: 12px;
             margin-bottom: 5px;
         }
 
@@ -146,7 +146,7 @@
             position: relative;
             padding-left: 15px;
             margin-bottom: 3px;
-            font-size: 11px;
+            font-size: 12px;
             line-height: 1.4;
         }
 
@@ -165,7 +165,7 @@
         }
 
         .academic-achievements {
-            font-size: 11px;
+            font-size: 12px;
             margin-top: 5px;
         }
 
@@ -176,7 +176,7 @@
         .thesis {
             font-style: italic;
             color: #000000;
-            font-size: 11px;
+            font-size: 12px;
             margin-top: 3px;
         }
 
@@ -185,7 +185,7 @@
             background: #f8f9fa;
             padding: 10px;
             border-radius: 5px;
-            font-size: 11px;
+            font-size: 12px;
         }
 
         .reference strong {
@@ -195,7 +195,7 @@
         .footer {
             text-align: center;
             margin-top: 20px;
-            font-size: 11px;
+            font-size: 12px;
             color: #000000;
             font-style: italic;
         }
@@ -203,7 +203,7 @@
         /* Print styles */
         @media print {
             body {
-                font-size: 11px;
+                font-size: 12px;
             }
             
             .container {
@@ -232,13 +232,19 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 13px;
             z-index: 1000;
         }
 
         .download-btn:hover {
             background: #2980b9;
         }
+
+        .links {
+            color: black;
+            text-decoration: none;
+        }
+
 
         @media print {
             .download-btn {
@@ -258,8 +264,9 @@
                 <span>📧 harleygothards@gmail.com</span>
                 <span>📱 +63 960 662 3222</span>
                 <span>📍 Himatagon(Pob.), Saint Bernard, Southern Leyte, Philippines</span>
-                <span>💼 LinkedIn: https://www.linkedin.com/in/harley-gotardo-4bbbaa2aa/</span>
-                <span>💻 GitHub: https://github.com/HarleyGotardo</span>
+                <a href="https://www.linkedin.com/in/harley-gotardo-4bbbaa2aa/" class="links">💼 LinkedIn: https://www.linkedin.com/in/harley-gotardo-4bbbaa2aa/</a>
+                <a href="https://github.com/HarleyGotardo" class="links">💻 GitHub: https://github.com/HarleyGotardo</a>
+                <a href="https://harley-gotardo-portfolio.vercel.app" class="links">📃 Portfolio: https://harley-gotardo-portfolio.vercel.app</a>
             </div>
         </div>
 
@@ -275,13 +282,13 @@
             <div class="skills-grid">
                 <div>
                     <div class="skill-category">
-                        <strong>Frontend Development:</strong> Vue.js, Inertia.js, HTML5, CSS3, JavaScript, Tailwind CSS
+                        <strong>Frontend Development:</strong> Vue.js, Inertia.js, HTML5, CSS3, JavaScript, Tailwind CSS, Next.js
                     </div>
                     <div class="skill-category">
-                        <strong>Backend Development:</strong> Laravel, Ruby on Rails, RESTful APIs, Job Queues & Schedulers, Supabase, Firebase
+                        <strong>Backend Development:</strong> Laravel, Ruby on Rails, RESTful APIs, Job Queues & Schedulers, Supabase, Firebase, Python
                     </div>
                     <div class="skill-category">
-                        <strong>Database Technologies:</strong> Supabase, SQLite, MySQL, Database Normalization (3NF), Query Optimization
+                        <strong>Database Technologies:</strong> PostgreSQL, SQLite, MySQL, Database Normalization (3NF), Query Optimization
                     </div>
                 </div>
                 <div>
@@ -289,7 +296,7 @@
                         <strong>Mobile Development:</strong> Flutter, Android Development
                     </div>
                     <div class="skill-category">
-                        <strong>Tools & Platforms:</strong> Git, Vercel, Pusher, Google Meet, JSON APIs
+                        <strong>Tools & Platforms:</strong> Git, Vercel, Google Meet, JSON APIs
                     </div>
                     <div class="skill-category">
                         <strong>Core Competencies:</strong> CRUD Operations, Role-Based Access Controls, System Integration, Real-time Features
@@ -301,53 +308,95 @@
             </div>
         </div>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">Full-Stack Developer Intern <span class="date">June - August 2024</span></div>
-                    <div class="company">High6 - Web Design & E-commerce Development Company | Remote</div>
-                    <div class="company-desc">Digital agency specializing in custom web solutions and e-commerce platforms for SMEs</div>
-                </div>
-                <ul class="achievements">
-                    <li>Built an internal Subscription Tracking System, streamlining record-keeping and improving data organization significantly</li>
-                    <li>Engineered advanced CRUD operations with soft delete and restore functionality, enhancing data recovery capabilities</li>
-                    <li>Automated expiry reminders via Laravel job queues and schedulers, eliminating the need for manual follow-ups</li>
-                    <li>Customized UI components using Vue.js and Tailwind CSS, improving user experience and visual consistency across multiple views</li>
-                    <li>Normalized complex relational tables before development, reducing redundancy and optimizing query performance significantly</li>
-                    <li>Managed backend logic with Laravel and Inertia.js, maintaining seamless data flow and responsiveness in single-page application architecture</li>
-                    <li>Created system notifications and real-time data sync features using Pusher, improving user alert visibility and engagement</li>
-                </ul>
-            </div>
-        </div>
+<div class="job">
+    <div class="job-header">
+        <div class="job-title">Junior Laravel Developer Intern <span class="date">June - August 2024</span></div>
+        <div class="company">High6 Creatives - Web Design & E-commerce Development Company | Remote</div>
+        <div class="company-desc">Digital agency specializing in custom web solutions and e-commerce platforms for SMEs</div>
+    </div>
+    <ul class="achievements">
+        <li>Worked as the sole Laravel developer intern in the Laravel department, handling both backend and frontend tasks in a full-stack development role.</li>
+        <li>Collaborated with the Laravel team in weekly online meetings to present progress, gather feedback, and align development work with company standards.</li>
+        <li>Applied database normalization techniques to ensure efficiency and reduce redundancy in the system’s data structure before coding began.</li>
+        <li>Created reusable Vue.js components styled with Tailwind CSS to maintain UI consistency across the platform.</li>
+        <li>Configured Laravel controllers, routes, and migrations to establish smooth data flow between backend and frontend.</li>
+        <li>Utilized Vue directives (v-model, v-if, v-else, v-for) to build interactive UI features and dynamic content rendering.</li>
+        <li>Integrated Inertia.js to enable SPA navigation without full-page reloads, improving user experience and speed.</li>
+        <li>Implemented email notification features for subscription and payment method expiry reminders using Laravel Jobs and Gmail SMTP.</li>
+        <li>Configured NSSM to keep the Laravel scheduler running in the background for automated tasks.</li>
+        <li>Managed source code using Bitbucket and Git workflows, ensuring version control and collaborative development.</li>
+        <li>Adapted to a remote work environment using tools such as Zoho Vault, Laragon, and Thunderbird for secure credentials, local development, and email communication.</li>
+    </ul>
+</div>
+
+
 
         <div class="section">
             <h2>Education</h2>
+        
             <div class="education-item">
                 <div class="education-header">
-                    <div class="degree">Bachelor of Science in Computer Science <span class="date">2021 - 2025</span></div>
+                    <div class="degree">
+                        Bachelor of Science in Computer Science <span class="date">2021 – 2025</span>
+                    </div>
                     <div class="school">Visayas State University</div>
                 </div>
                 <div class="academic-achievements">
-                    <strong>Academic Achievements:</strong> Outstanding Computer Science Trainee Award: Full Stack Developer | Dean and Chairman's List Achiever | 2nd Year Representative: Computer Science Student Society Organization | Project Manager, Software Engineering 1 and 2
+                    <strong>Academic Achievements:</strong> 
+                    • Outstanding Computer Science Trainee Award – Full Stack Developer  
+                    • Dean’s List and Chairman’s List Achiever  
+                    • 2nd Year Representative – Computer Science Student Society Organization  
+                    • Project Manager – Software Engineering 1 & 2
                 </div>
                 <div class="thesis">
-                    <strong>Thesis:</strong> "Development of a Web-Based Monitoring System for the Forest Product Collectors of the Visayas State University" - <strong>Copyright Protected by the National Library of the Philippines </strong>
+                    <strong>Thesis:</strong> Development of a Web-Based Monitoring System for the Forest Product Collectors of the Visayas State University — <strong>Copyright Protected by the National Library of the Philippines</strong>
                 </div>
             </div>
+        
             <div class="education-item">
                 <div class="education-header">
-                    <div class="degree">Technical Vocational Livelihood - Information Communications Technology <span class="date">2019 - 2021</span></div>
+                    <div class="degree">
+                        Technical Vocational Livelihood – Information Communications Technology <span class="date">2019 – 2021</span>
+                    </div>
                     <div class="school">San Juan National High School</div>
                 </div>
                 <div class="academic-achievements">
-                    <strong>Graduated with High Honors</strong>
+                    <strong>Academic Achievements:</strong> Graduated with High Honors
                 </div>
             </div>
         </div>
+        
 
         <div class="section">
             <h2>Featured Projects</h2>
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">University Supreme Student Council Connect: Software-Based Management System<span class="date">2025 - Present</span></div>
+                    <div class="project-tech">Database Engineer & Backend Developer | Next.js, Supabase, Tailwind CSS, Vercel, Flutter</div>
+                </div>
+                <ul class="achievements">
+                    <li>Designed and built the system database in Supabase, ensuring proper schema structure and relationships</li>
+                    <li>Normalized all database tables to Third Normal Form (3NF) to reduce redundancy and improve query efficiency</li>
+                    <li>Developed backend logic for Student Registration, QR Code-based Attendance Scanning, and Fines & Fees Management modules</li>
+                    <li>Created secure API endpoints for communication between the web application and mobile app</li>
+                </ul>
+            </div>
+            
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-title">Human Resource Information System (HRIS) - Mentorship Project <span class="date">2025 - Present</span></div>
+                    <div class="project-tech">Technical Mentor | Laravel Livewire, Tailwind CSS, MySQL</div>
+                </div>
+                <ul class="achievements">
+                    <li>Served as technical mentor to a master's degree student, overseeing the full-cycle development of a Human Resource Information System for their MIT capstone</li>
+                    <li>Created and organized the project manuscript, aligning technical documentation with MIT capstone requirements</li>
+                    <li>Facilitated structured learning sessions that enabled the student to grasp Laravel Livewire fundamentals within 2 months</li>
+                    <li>Co-developed key technical deliverables including Use Case Diagram, Entity-Relationship Diagram (ERD), and normalized database schema</li>
+                </ul>
+            </div>
+            
+
             <div class="project">
                 <div class="project-header">
                     <div class="project-title">Forest Product Collectors Monitoring System (Thesis Project) <span class="date">2024 - 2025</span></div>
@@ -364,18 +413,6 @@
 
             <div class="project">
                 <div class="project-header">
-                    <div class="project-title">Human Resource Information System (HRIS) - Mentorship Project <span class="date">2025</span></div>
-                    <div class="project-tech">Technical Mentor | Laravel Livewire, Tailwind CSS, MySQL</div>
-                </div>
-                <ul class="achievements">
-                    <li>Acted as technical mentor to a master's degree student, guiding the full-cycle development of a Human Resource Information System</li>
-                    <li>Facilitated structured learning sessions enabling the student to understand Laravel Livewire fundamentals within 2 months</li>
-                    <li>Co-developed key technical assets including Use Case Diagram, ERD, and database schema</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
                     <div class="project-title">Freelance Fitness Tracking Web Application <span class="date">2024</span></div>
                     <div class="project-tech">Full-Stack Developer | Vue.js, Supabase, Tailwind CSS</div>
                 </div>
@@ -386,6 +423,30 @@
                 </ul>
             </div>
         </div>
+
+<div class="project">
+    <div class="project-header">
+        <div class="project-title">
+            Subscriptions Tracking System (Intern Project) 
+            <span class="date">June - August 2024</span>
+        </div>
+        <div class="project-tech">
+            Laravel | Vue.js | Inertia.js | Tailwind CSS | MySQL
+        </div>
+    </div>
+    <ul class="achievements">
+        <li>Manages subscriptions, payment methods, companies, and categories with role-based restrictions for non-super admins.</li>
+        <li>Modern dashboard with system activity overview, quick access to core functions, and a notification bell with unread count.</li>
+        <li>CRUDR operations for all major modules, with soft delete and restore functionality plus a dedicated “Trash” view.</li>
+        <li>Advanced sorting, filtering, and search capabilities for efficient data retrieval.</li>
+        <li>Automated expiry notification system sending both email reminders and system notifications, all triggered by a single button.</li>
+        <li>Laravel scheduler and background jobs running status checks every 2 seconds, with daily mail and notification dispatch via NSSM.</li>
+        <li>UI/UX enhancements including a custom “No Result” component with animations and consistent color schemes across the platform.</li>
+        <li>Role-based access control and middleware protection for sensitive operations, ensuring system security.</li>
+    </ul>
+</div>
+
+
 
         <div class="section">
             <h2>Additional Projects</h2>
